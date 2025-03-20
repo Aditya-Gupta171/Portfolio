@@ -25,15 +25,13 @@ const Hero = () => {
             I turn ideas into scalable solutions.
           </h2>
           <p className="text-slate max-w-xl mb-8 text-lg">
-            I'm a backend developer and AI enthusiast specializing in building robust and scalable applications. 
-            Currently focused on creating impactful solutions using Python frameworks and exploring AI/ML technologies.
-          </p>
+  I'm a full-stack developer proficient in MERN, Next.js, and TypeScript, with experience in building scalable and efficient applications.  
+  I also have a strong understanding of Python, Django, and Flask, and I'm exploring AI/ML technologies.
+</p>
+
           <div className="flex flex-wrap gap-4">
             <Button className="bg-transparent border-2 border-electric text-electric hover:bg-electric/10">
               <FileText className="mr-2 h-4 w-4" /> View Resume
-            </Button>
-            <Button className="bg-electric text-navy hover:bg-electric/90">
-              <Send className="mr-2 h-4 w-4" /> Get in Touch
             </Button>
           </div>
         </div>
