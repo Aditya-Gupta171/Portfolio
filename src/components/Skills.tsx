@@ -37,6 +37,7 @@ const Skills = () => {
       skills: [
         { name: "Python", icon: "logos:python" },
         { name: "JavaScript", icon: "logos:javascript" },
+        { name: "TypeScript", icon: "logos:typescript-icon" },
         { name: "Java", icon: "logos:java" },
       ],
     },
@@ -44,8 +45,9 @@ const Skills = () => {
       title: "Frameworks & Technologies",
       skills: [
         { name: "Django", icon: "vscode-icons:file-type-django" },
-        { name: "Flask", icon: "simple-icons:flask", className: "text-white" }, // Changed Flask icon
+        { name: "Flask", icon: "simple-icons:flask", className: "text-white" },
         { name: "React", icon: "logos:react" },
+        { name: "Next.js", icon: "logos:nextjs-icon" },
         { 
           name: "MERN Stack", 
           customIcons: [
@@ -61,8 +63,10 @@ const Skills = () => {
       title: "Tools & Databases",
       skills: [
         { name: "MySQL", icon: "logos:mysql" },
-        { name: "MongoDB", icon: "logos:mongodb", className: "w-20 h-20" }, // Made MongoDB icon larger
+        { name: "MongoDB", icon: "logos:mongodb" },
+        { name: "PostgreSQL", icon: "logos:postgresql" },
         { name: "Firebase", icon: "logos:firebase" },
+        { name: "Docker", icon: "logos:docker-icon" },
       ],
     },
   ];
