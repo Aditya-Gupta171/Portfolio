@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Projects = () => {
   const projects = [
     {
-      title: "KhanMango",
+      title: "KhanaMangao",
       description: "A MERN stack e-commerce platform for mango trading, featuring real-time updates, secure payment integration, and responsive design.",
       tech: ["MongoDB", "Express.js", "React", "Node.js", "Redux"],
       github: "#",
