@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Send, Mail, Github, Linkedin } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 import { useToast } from "@/components/ui/use-toast";
 import emailjs from '@emailjs/browser';
-
+import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -82,9 +81,13 @@ const Contact = () => {
               required
               className="w-full h-32 p-3 rounded-md bg-navy border border-slate text-light-slate focus:outline-none focus:ring-2 focus:ring-electric"
             />
-            <Button type="submit" className="bg-electric text-navy hover:bg-electric/90">
-              <Send className="mr-2 h-4 w-4" /> Send Message
-            </Button>
+            <InteractiveHoverButton 
+              type="submit" 
+              disabled={isSubmitting}
+              className="bg-electric border-electric text-navy hover:bg-electric/90 hover:text-navy font-medium"
+            >
+              Send Message
+            </InteractiveHoverButton>
           </form>
 
           <div className="space-y-6">
@@ -97,7 +100,7 @@ const Contact = () => {
             <div className="flex items-center space-x-4">
               <Linkedin className="h-5 w-5 text-electric" />
               <a href="https://www.linkedin.com/in/adityagupta27/" target="_blank" rel="noopener noreferrer" className="text-light-slate hover:text-electric">
-              linkedin.com/in/adityagupta27/
+                linkedin.com/in/adityagupta27/
               </a>
             </div>
           </div>
